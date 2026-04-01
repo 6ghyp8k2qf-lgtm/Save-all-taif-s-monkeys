@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mystery Cup</title>
+
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: crimson;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkred;
+    }
+
+    #cup {
+      display: none;
+      margin-top: 30px;
+      max-width: 300px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Don’t click this button</h1>
+  <p>You’ve been warned...</p>
+
+  <button onclick="showImage()">Reveal</button>
+
+  <br>
+
+  <!-- YOUR IMAGE -->
+  <img id="cup" src="./IMG_1134.jpeg" alt="Hidden image">
+
+  <script>
+    function showImage() {
+      document.getElementById("cup").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
