@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mystery Cup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f5f5f5;
+    }
+
+    #cup {
+      display: none;
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click if you dare 👀</h1>
+
+  <button onclick="showCup()">Reveal</button>
+
+  <br>
+
+  <img id="cup" src="cunt-cup.jpg" alt="Mystery Cup">
+
+  <script>
+    function showCup() {
+      document.getElementById("cup").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
